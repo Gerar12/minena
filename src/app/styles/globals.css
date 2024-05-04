@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes floatAndFade {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.float-and-fade {
+  animation: floatAndFade 4s ease-in-out infinite;
+}
