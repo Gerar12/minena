@@ -10,7 +10,7 @@ const ZzzAnimation = () => {
           key={index}
           initial={{ opacity: 2, y: 100 }}
           animate={{ opacity: 1, y: -50 }}
-          className="text-4xl "
+          className="text-4xl  "
           transition={{
             delay: index * 0.5,
             repeat: Infinity,

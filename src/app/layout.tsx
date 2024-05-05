@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Layout } from "@/components/Layout";
 import "@/app/styles/globals.css";
 
-const inter = Lora({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diana",
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body className={inter.className}>
         <Layout>{children}</Layout>
       </body>
